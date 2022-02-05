@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
+body{
+    background-size: 100vw 100vh;
+    box-sizing: border-box;
+}
+#form{
+    background-color: 'pink';
+    position: relative;
+    top: 10vw;
+    left: 17vw;
+}
+input{
+    height: 5vw;
+    width: 35vw;
+    border-radius: 1vw;
+    background-color: #34a0a4;
+    color: #b5e48c;
+    font-size: 4vw;
+    position: relative;
+    top: 0.347vw;
+    font-family: Shrikhand;
+    padding: 1vw;
+    text-align: center;
+    text-justify: distribute;
+}
+button{
+    height: 7vw;
+    width: 35vw;
+    border-radius: 1vw;
+    background-color: #34a0a4;
+    color: #b5e48c;
+    font-size: 3vw;
+    font-family: Shrikhand;
+    letter-spacing: 0.05vw;
+}
+#audios{
+    position: relative;
+    top: 20vw;
+    left: 20vw;
+    height: 15vw;
+    width: 70vw;
+}
