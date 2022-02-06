@@ -64,7 +64,7 @@ async function getPictures(){
 // Get pictures in background
 getPictures();
 
-//setInterval(getPictures, 8000)
+setInterval(getPictures, 8000)
 
 
 

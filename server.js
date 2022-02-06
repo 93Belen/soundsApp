@@ -24,14 +24,16 @@ app.get('/getUrls/:query', async (req, res) => {
     const count = countResponse.count;
     console.log(count);
 
-    const pages = count / 13;
+    const pages = Math.floor(count / 12);
     const page = Math.floor(Math.random() * pages);
+    console.log(pages)
+    console.log(page);
 
     const fetchSound = await fetch(`https://freesound.org/apiv2/search/text/?query=${query}&token=${api_key}&page=${page}&page_size=12&fields=id`);
     const response = await fetchSound.json();
 
     // Get info (id) of sounds related to query word
-    console.log(response);
+    //console.log(response);
 
 
 
@@ -55,7 +57,7 @@ app.get('/getUrls/:query', async (req, res) => {
     const fetchUrl = await fetch(`https://freesound.org/apiv2/sounds/${arrOfIds[i]}/?token=${api_key}&fields=previews`);
     const response2 = await fetchUrl.json();
     
-    console.log(response2);
+    //console.log(response2);
 
 
     arrOfUrls.push(response2.previews['preview-hq-mp3'])
@@ -86,7 +88,7 @@ app.get('/pictures', async (req, res) => {
     // Fetch random image from random page
     const fetchPicture = await fetch(`https://pixabay.com/api/?key=${api_key_photos}&per_page=10&page=${random}&image_type=photo&q=space&colors=blue`);
     const pictureResponse = await fetchPicture.json();
-    console.log(pictureResponse);
+    //console.log(pictureResponse);
 
     //Get image url array
     const arrOfImages = [];
@@ -98,7 +100,7 @@ app.get('/pictures', async (req, res) => {
     
 
     res.send(arrOfImages);
-    console.log(arrOfImages);
+    //console.log(arrOfImages);
 
 
 

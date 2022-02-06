@@ -8,7 +8,7 @@ body{
     background-color: 'pink';
     position: relative;
     top: 10vw;
-    left: 17vw;
+    left: 12vw;
 }
 input{
     height: 5vw;
@@ -36,8 +36,8 @@ button{
 }
 #audios{
     position: relative;
-    top: 20vw;
-    left: 20vw;
+    top: 15vw;
+    left: 15vw;
     height: 15vw;
     width: 70vw;
 }
